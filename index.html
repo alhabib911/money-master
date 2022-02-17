@@ -11,15 +11,24 @@
 </head>
 <body>
     <header class="header-text mt-5">
-        <h2 class="lg: text-4xl text-center sm: text-2xl text-center">Finance Management</h2>
+        <h2 class="lg: text-4xl text-center sm: text-lg text-center">Finance Management</h2>
     </header>
 
     <main>
-        <section class="conatiner grid grid-cols-2 justify-items-start gap-5">
-          <div class="left-area m-5">
-            <img src="images/bg-1.jpg" alt="" />
+      <section>
+        <div
+          class="
+            conatiner
+            sm:flex
+            md:flex md:justify-items-start
+            sm:justify-center sm:flex-col
+            md:flex-row md:p-5
+          "
+        >
+          <div class="left-area mr-5 w-2/4 flex align-center">
+            <img src="images/bg-1.jpg" alt="" class="flex align-center" />
           </div>
-          <div class="px-20 py-10 right-area m-5 bg-blue-400">
+          <div class="py-10 right-area bg-blue-400 w-full px-3 w-1/2">
             <div class="income-expence">
               <div>
                 <h2 class="text-center my-2 text-2xl">Income</h2>
@@ -34,7 +43,7 @@
                   ></p>
                 </div>
               </div>
-  
+
               <br />
               <div>
                 <h2 class="text-center my-2 text-2xl">Expence</h2>
@@ -54,7 +63,7 @@
                       <h3>House Rent:</h3>
                       <input class="ml-7" type="text" id="houseCost" />
                     </div>
-  
+
                     <span
                       class="text-red-600 text-base text-center"
                       id="houseError"
@@ -80,7 +89,7 @@
                   Calculation
                 </button>
               </div>
-  
+
               <div class="text-center text-2xl">
                 <h3>Total Cost: $<span id="totalCost">000</span></h3>
               </div>
@@ -105,10 +114,12 @@
             </div>
             <div class="text-center text-2xl">
               <h3>Remaining Balance: $<span id="RemaingBalance">00</span></h3>
+              <p id="remainingBalanceError" class="text-red-500 text-lg"></p>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
     <footer class="mb-5">
         <h5 class="lg:text-sm text-center sm:text-xs text-center">© Copyright Finance Management co. 2021. All Rights Reserved</h5>

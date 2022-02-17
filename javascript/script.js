@@ -15,6 +15,7 @@ let foodError = document.getElementById("foodError");
 let houseError = document.getElementById("houseError");
 let transportError = document.getElementById("transportError");
 let saveBalanceError = document.getElementById("saveBalanceError");
+let remainingBalanceError = document.getElementById("remainingBalanceError");
 
 btn.addEventListener("click", calculation);
 function calculation() {
@@ -65,13 +66,14 @@ function savingFunction() {
   const saveValue =
     (parseInt(savingValue.value) / 100) * parseInt(incomeValue.value);
   saveBalance.innerHTML = saveValue;
-  if (parseInt(totalBalance.innerHTML) >= saveValue) {
-    const RemaingBalance =
+  const RemaingBalance =
     parseInt(incomeValue.value) - (parseInt(totalCost.innerHTML) + saveValue);
     savingValue.value = "";
-  ReamingBalance.innerHTML = RemaingBalance;  
-  }else{
-    saveBalanceError.innerHTML = ''
-  }
-  
+    if (RemaingBalance > 0) {
+        ReamingBalance.innerHTML = RemaingBalance;
+        remainingBalanceError.innerHTML=''
+    }else{
+        ReamingBalance.innerHTML = '0'
+        remainingBalanceError.innerHTML = 'You have not enough balance'
+    }
 }
