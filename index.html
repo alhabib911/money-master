@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <script src="javascript/app.js"></script>
 </head>
-<body>
+<body class="bg-gray-100	">
     <header class="header-text mt-5">
         <h2 class="lg: text-4xl text-center sm: text-lg text-center">Finance Management</h2>
     </header>
@@ -25,17 +25,17 @@
             md:flex-row md:p-5
           "
         >
-          <div class="left-area mr-5 w-2/4 flex align-center">
+          <div class="lg:left-area mr-5 w-2/4 flex align-center sm: mt-5 w-full">
             <img src="images/bg-1.jpg" alt="" class="flex align-center" />
           </div>
-          <div class="py-10 right-area bg-blue-400 w-full px-3 w-1/2">
+          <div class="lg:py-10 right-area bg-gray-300 w-full px-3 w-1/2 sm:w-full pb-10">
             <div class="income-expence">
               <div>
-                <h2 class="text-center my-2 text-2xl">Income</h2>
+                <h2 class="text-center my-2 text-lg font-bold">Income</h2>
                 <div class="">
-                  <div class="flex justify-center">
+                  <div class="flex justify-center ">
                     <h3>My Income:</h3>
-                    <input class="ml-7" type="text" id="income" />
+                    <input class="ml-7 pl-2" type="text" id="income" />
                   </div>
                   <p
                     class="text-red-500 text-center my-2 text-base"
@@ -46,12 +46,12 @@
 
               <br />
               <div>
-                <h2 class="text-center my-2 text-2xl">Expence</h2>
+                <h2 class="text-center my-2 text-lg font-bold">Expence</h2>
                 <div>
                   <div class="m-2">
                     <div class="flex justify-center">
                       <h3>Food Cost:</h3>
-                      <input class="ml-9" type="text" id="foodCost" />
+                      <input class="ml-9 pl-2" type="text" id="foodCost" />
                     </div>
                     <span
                       class="text-red-600 text-base text-center"
@@ -61,7 +61,7 @@
                   <div class="">
                     <div class="flex justify-center">
                       <h3>House Rent:</h3>
-                      <input class="ml-7" type="text" id="houseCost" />
+                      <input class="ml-7 pl-2" type="text" id="houseCost" />
                     </div>
 
                     <span
@@ -72,7 +72,7 @@
                   <div class="m-2">
                     <div class="flex justify-center">
                       <h3>Transport Cost:</h3>
-                      <input class="ml-2" type="text" id="transportCost" />
+                      <input class="ml-2 pl-2" type="text" id="transportCost" />
                     </div>
                     <span
                       class="text-red-600 text-base text-center"
@@ -82,37 +82,35 @@
                 </div>
               </div>
               <div class="flex justify-center">
-                <button
-                  class="bg-amber-400 px-5 py-2 rounded my-5"
-                  id="calculation"
-                >
+                <button class="bg-amber-400 px-5 py-2 rounded my-5 font-bold"
+                  id="calculation">
                   Calculation
                 </button>
               </div>
 
-              <div class="text-center text-2xl">
-                <h3>Total Cost: $<span id="totalCost">000</span></h3>
+              <div class="text-center text-xl text-red-600	">
+                <h3>Total Cost: $<span id="totalCost">00</span></h3>
               </div>
-              <div class="text-center text-2xl">
-                <h3>Balance: $<span id="totalBalance">000</span></h3>
+              <div class="text-center text-xl text-green-900 font-bold">
+                <h3>Balance: $<span id="totalBalance">00</span></h3>
               </div>
             </div>
             <hr class="my-5" />
             <div>
               <div class="flex justify-center">
-                <h2 class="p-2">Save</h2>
-                <input type="text" id="saving" />
-                <h2 class="p-2">%</h2>
-                <button class="p-2 bg-amber-400 px-5 py-2 rounded" id="saveBtn">
+                <h2 class="m-2">Save</h2>
+                <input class="pl-2" type="text" id="saving" />
+                <h2 class="m-2">%</h2>
+                <button class="p-2 bg-amber-400 px-5 py-2 rounded font-bold" id="saveBtn">
                   Save
                 </button>
               </div>
             </div>
-            <div class="text-center text-2xl">
+            <div class="text-center text-xl text-cyan-700	">
               <h3>Save Balance: $<span id="saveBalance">00</span></h3>
               <span id="saveBalanceError"></span>
             </div>
-            <div class="text-center text-2xl">
+            <div class="text-center text-xl text-blue-500	font-bold	">
               <h3>Remaining Balance: $<span id="RemaingBalance">00</span></h3>
               <p id="remainingBalanceError" class="text-red-500 text-lg"></p>
             </div>
@@ -121,9 +119,9 @@
       </section>
     </main>
 
-    <!-- <footer class="mb-5">
-        <h5 class="lg:text-sm text-center sm:text-xs text-center">© Copyright Finance Management co. 2021. All Rights Reserved</h5>
-    </footer> -->
+    <footer class="mb-5">
+        <h5 class="lg:text-sm text-center sm:mt-5 text-xs text-center">© Copyright Finance Management co. 2021. All Rights Reserved</h5>
+    </footer>
     <script src="javascript/script.js"></script>
 </body>
 </html>
