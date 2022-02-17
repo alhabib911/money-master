@@ -26,7 +26,6 @@ function calculation() {
     incomeError.innerHTML = "";
     calculationFunction(foodCostValue, houseCostValue, transportValue);
     transportCost.value = "";
-    // incomeValue.value = "";
     foodCost.value = "";
     houseCost.value = "";
   } else {
